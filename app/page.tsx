@@ -136,7 +136,7 @@ export default function LandingPage() {
                 </div>
                 <div className="h-6 sm:h-7 md:h-8 flex justify-start items-start gap-2 sm:gap-3">
                   <a
-                    href="https://autex-app.vercel.app/"
+                    href="https://app.autexai.com/"
                     className="px-3 sm:px-4 py-1.5 sm:py-2 rounded-full flex justify-center items-center hover:bg-[rgba(55,50,47,0.04)] transition-colors"
                   >
                     <div className="text-[#37322F] text-xs md:text-[13px] font-medium leading-5 font-sans">
@@ -144,7 +144,7 @@ export default function LandingPage() {
                     </div>
                   </a>
                   <a
-                    href="https://autex-app.vercel.app/"
+                    href="https://app.autexai.com/"
                     className="px-3 sm:px-4 py-1.5 sm:py-2 rounded-full flex justify-center items-center bg-[#37322F] text-white shadow-sm hover:bg-[#2F2A28] transition-colors"
                   >
                     <div className="text-white text-xs md:text-[13px] font-medium leading-5 font-sans">

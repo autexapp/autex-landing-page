@@ -43,7 +43,7 @@ export function HeroSection() {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4 md:gap-6">
             <a
-              href="https://autex-app.vercel.app/"
+              href="https://app.autexai.com/"
               className="bg-gradient-to-r from-[#605A57] to-[#37322f] text-white text-sm font-semibold font-sans rounded-full px-6 py-3 animate-shimmer flex items-center justify-center"
             >
               Get Started for Free
