@@ -1,82 +1,79 @@
 'use client'
 
+import { Clock, Camera, Moon } from 'lucide-react'
+
 export default function ProblemSection() {
   const problemCards = [
     {
-      icon: "⏰",
+      icon: Clock,
+      accentColor: 'from-red-400 to-red-500',
+      iconBg: 'bg-red-50',
+      iconColor: 'text-red-500',
       title: "Slow Response = Lost Sales",
-      description_en: "Customer comments 'Price?' at 2 AM. I reply at 9 AM. By then, they've bought from another page.",
-      description_bn: "কাস্টমার রাত ২টায় কমেন্ট করে 'Price?' আমি সকাল ৯টায় reply দেই। ততক্ষণে সে অন্য পেজ থেকে কিনে ফেলেছে।",
-      impact_bn: "প্রতিদিন এভাবে ৫-৮টা অর্ডার হাতছাড়া হয়।",
+      description: "কাস্টমার রাত ২টায় কমেন্ট করে, আপনি সকাল ৯টায় reply দেন — ততক্ষণে সে অন্য পেজ থেকে কিনে ফেলেছে।",
     },
     {
-      icon: "📸",
+      icon: Camera,
+      accentColor: 'from-orange-400 to-orange-500',
+      iconBg: 'bg-orange-50',
+      iconColor: 'text-orange-500',
       title: "Screenshot Chaos",
-      description_en: "Customers send product screenshots. I manually search for the product and price. Time wasted + mistakes made.",
-      description_bn: "কাস্টমাররা পণ্যের screenshot পাঠায়। আমি manually খুঁজে বের করি কোন product, কত দাম। সময় নষ্ট + ভুল হয়।",
-      impact_bn: "একটা ভুল মানে একটা angry customer।",
+      description: "কাস্টমার screenshot পাঠায়, আপনি manually খুঁজে বের করেন — সময় নষ্ট, ভুল হয়, customer angry।",
     },
     {
-      icon: "📝",
-      title: "Manual Order Collection",
-      description_en: "I have to manually collect name, address, and phone number from each customer separately. I spend hours in the inbox.",
-      description_bn: "প্রতিটা customer-এর কাছ থেকে আলাদা করে নাম, ঠিকানা, ফোন নম্বর collect করতে হয়। ঘণ্টার পর ঘণ্টা inbox-এ বসে থাকি।",
-      impact_bn: "এটাই আমার দিনের সবচেয়ে বড় headache।",
-    },
-    {
-      icon: "🌙",
-      title: "Midnight Messages",
-      description_en: "I see messages from 12-2 AM in the morning. By then, the customer's interest has waned. Even if I reply, they don't respond.",
-      description_bn: "রাত ১২টা-২টার messages সকালে দেখি। ততক্ষণে customer-এর interest কমে গেছে। Reply দিলেও আর respond করে না।",
-      impact_bn: "৩০-৪০% potential orders এভাবে মিস হয়।",
-    },
-    {
-      icon: "📈",
-      title: "No System = No Scale",
-      description_en: "I'm doing everything manually, which means I can't scale. I want to launch more products but I know I won't be able to handle the inbox.",
-      description_bn: "আমি manually সব করছি মানে আমি scale করতে পারছি না। আরো products launch করতে চাই কিন্তু inbox handle করতে পারব না জানি।",
-      impact_bn: "Manual system = growth-এর ceiling।",
+      icon: Moon,
+      accentColor: 'from-amber-400 to-yellow-500',
+      iconBg: 'bg-amber-50',
+      iconColor: 'text-amber-500',
+      title: "24/7 is Impossible",
+      description: "আপনি ঘুমান, কিন্তু customers থামে না। ৩০-৪০% orders মিস হয় শুধু response delay-তে।",
     },
   ]
 
   return (
-    <div className="w-full border-b border-[rgba(55,50,47,0.12)] flex flex-col justify-center items-center">
-      {/* Header */}
-      <div className="self-stretch px-6 md:px-12 py-12 md:py-16 border-b border-[rgba(55,50,47,0.12)] flex justify-center items-center gap-6">
-        <div className="w-full max-w-[586px] px-4 md:px-6 py-4 md:py-5 overflow-hidden rounded-lg flex flex-col justify-start items-center gap-4">
-          <h2 className="w-full text-center flex justify-center flex-col text-[#49423D] text-2xl md:text-4xl font-semibold leading-tight md:leading-[44px] font-sans tracking-tight">
+    <section className="w-full border-b border-[rgba(55,50,47,0.12)] py-16 md:py-24">
+      <div className="max-w-[900px] mx-auto px-4 md:px-6">
+        {/* Header */}
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="text-[#49423D] text-2xl md:text-4xl font-semibold leading-tight tracking-tight mb-3">
             আপনার ব্যবসা প্রতিদিন কাস্টমার হারাচ্ছে
           </h2>
-          <p>আপনি হয়তো বুঝতেই পারছেন না।</p>
+          <p className="text-[#605A57] text-base md:text-lg">
+            আপনি হয়তো বুঝতেই পারছেন না।
+          </p>
         </div>
-      </div>
 
-      {/* Problem Cards */}
-      <div className="self-stretch px-4 md:px-12 py-8 md:py-12 flex flex-col justify-center items-center gap-4">
-        <div className="w-full max-w-[800px] flex flex-col gap-3 md:gap-4">
-          {problemCards.map((card, index) => (
-            <div
-              key={index}
-              className="px-4 md:px-6 py-3 md:py-4 border border-[rgba(55,50,47,0.12)] rounded-lg hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
-            >
-              <div className="flex items-center gap-2 mb-2">
-                <span className="text-xl">{card.icon}</span>
-                <p className="text-[#49423D] font-semibold text-base md:text-lg">
+        {/* Problem Cards - Clean Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+          {problemCards.map((card, index) => {
+            const IconComponent = card.icon
+            return (
+              <div
+                key={index}
+                className="relative bg-white rounded-xl p-6 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-lg hover:-translate-y-1 transition-all duration-300 overflow-hidden group"
+              >
+                {/* Left Accent Border */}
+                <div className={`absolute left-0 top-0 h-full w-1 bg-gradient-to-b ${card.accentColor}`} />
+                
+                {/* Icon */}
+                <div className={`w-12 h-12 ${card.iconBg} rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                  <IconComponent className={`w-6 h-6 ${card.iconColor}`} strokeWidth={1.5} />
+                </div>
+                
+                {/* Title */}
+                <h3 className="text-[#49423D] text-lg font-semibold mb-2">
                   {card.title}
+                </h3>
+                
+                {/* Description - Short & Sweet */}
+                <p className="text-[#605A57] text-sm leading-relaxed">
+                  {card.description}
                 </p>
               </div>
-              <p className="text-[#605A57] text-base font-normal leading-[1.6]">
-                "{card.description_bn}"
-              </p>
-              <p className="text-[#605A57] text-base font-normal leading-[1.6] mt-1">
-                {card.impact_bn}
-              </p>
-            </div>
-          ))}
+            )
+          })}
         </div>
       </div>
-
-
-    </div>
+    </section>
   )
 }

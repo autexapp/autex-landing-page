@@ -1,217 +1,118 @@
 "use client";
 
+import { Zap, Brain, Camera, MessageSquare, LayoutDashboard, Moon } from 'lucide-react'
+
 export default function SolutionSection() {
   const features = [
     {
-      icon: "⚡",
-      title: "Lightning-Fast Comment Response",
-      titleBn: "তাৎক্ষণিক কমেন্ট রিপ্লাই",
-      description: (
-        <div className="space-y-2">
-          <p>
-            আপনার পোস্টের প্রতিটা কমেন্ট AI monitor করে। কেউ "Price?" বা
-            "Available?" লিখলেই:
-          </p>
-          <ul className="list-disc pl-4 space-y-1">
-            <li>Public reply (২ সেকেন্ডের মধ্যে)</li>
-            <li>Private DM inbox-এ (একই সাথে)</li>
-          </ul>
-          <p className="font-medium pt-1">
-            Customer engaged থাকে। আপনি ঘুমাচ্ছেন? Autex জেগে আছে।
-          </p>
-        </div>
-      ),
+      icon: Zap,
+      accentColor: 'from-yellow-400 to-amber-500',
+      iconBg: 'bg-yellow-50',
+      iconColor: 'text-yellow-600',
+      title: "Lightning-Fast Reply",
+      titleBn: "তাৎক্ষণিক রিপ্লাই",
+      description: "কমেন্টে auto-reply (Coming Soon) + DM-এ instant response। Customer engaged, আপনি ঘুমান।",
+      comingSoon: true,
     },
     {
-      icon: "🧠",
+      icon: Brain,
+      accentColor: 'from-purple-400 to-violet-500',
+      iconBg: 'bg-purple-50',
+      iconColor: 'text-purple-600',
       title: "Smart Intent Detection",
-      titleBn: "স্মার্ট Intent সনাক্তকরণ",
-      description: (
-        <div className="space-y-3">
-          <p>সব কমেন্ট same না। Autex বুঝতে পারে:</p>
-          <div className="space-y-2">
-            <div className="bg-orange-50/50 p-2 rounded border border-orange-100">
-              <span className="font-semibold text-orange-700">
-                Buying Intent 🔥
-              </span>
-              <p className="text-xs mt-1 text-gray-600">
-                ("Price?", "Order করব", "Available?") → High priority
-                notification + special response
-              </p>
-            </div>
-            <div className="bg-blue-50/50 p-2 rounded border border-blue-100">
-              <span className="font-semibold text-blue-700">
-                General Intent 💬
-              </span>
-              <p className="text-xs mt-1 text-gray-600">
-                ("Beautiful!", "Nice product") → Thank you reply
-                
-              </p>
-            </div>
-          </div>
-          <p>আপনি শুধু real buyers-দের সাথে deal করেন।</p>
-        </div>
-      ),
+      titleBn: "স্মার্ট Intent বোঝে",
+      description: "\"Price?\" vs \"Beautiful!\" — Autex বোঝে কে buyer, কে শুধু admirer। Priority অনুযায়ী respond করে।",
     },
     {
-      icon: "📸",
+      icon: Camera,
+      accentColor: 'from-pink-400 to-rose-500',
+      iconBg: 'bg-pink-50',
+      iconColor: 'text-pink-600',
       title: "AI Product Recognition",
-      titleBn: "ছবি থেকে Product সনাক্তকরণ",
-      description: (
-        <div className="space-y-2">
-          <p>কাস্টমার আপনার পণ্যের screenshot পাঠায়?</p>
-          <p>Autex AI ছবি analyze করে:</p>
-          <ul className="list-disc pl-4 space-y-1 text-sm">
-            <li>আপনার database থেকে product খুঁজে বের করে</li>
-            <li>নাম, দাম, variations confirm করে</li>
-            <li>Customer-কে জিজ্ঞাসা করে: "এটা কি [Product Name]?"</li>
-          </ul>
-          <div className="flex gap-2 pt-1 text-xs font-semibold text-green-700">
-            <span className="bg-green-50 px-2 py-1 rounded">
-              ৮৫-৯২% Accuracy
-            </span>
-            <span className="bg-green-50 px-2 py-1 rounded">২-৫ সেকেন্ডে</span>
-          </div>
-          <p className="text-sm font-medium">Manual searching শেষ।</p>
-        </div>
-      ),
+      titleBn: "ছবি থেকে Product চেনে",
+      description: "Screenshot পাঠালে AI আপনার database থেকে product খুঁজে বের করে। ৮৫-৯২% accuracy, ২-৫ সেকেন্ডে।",
     },
     {
-      icon: "💬",
-      title: "Conversational Order Collection",
-      titleBn: "মানুষের মতো কথোপকথন",
-      description: (
-        <div className="space-y-2">
-          <p>Autex robotic না — এটা আপনার মতোই কথা বলে:</p>
-          <div className="text-sm space-y-1.5 bg-gray-50 p-3 rounded-lg border border-gray-100">
-            <p>
-              <span className="font-bold text-blue-600">Bot:</span> "আপনার নাম
-              কী বলবেন?"
-            </p>
-            <p>
-              <span className="font-bold text-green-600">Customer:</span>{" "}
-              "Ayesha"
-            </p>
-            <p>
-              <span className="font-bold text-blue-600">Bot:</span> "ধন্যবাদ
-              Ayesha! আপনার ফোন নম্বর?"
-            </p>
-            <p>
-              <span className="font-bold text-green-600">Customer:</span>{" "}
-              "01712345678"
-            </p>
-            <p>
-              <span className="font-bold text-blue-600">Bot:</span> "Perfect!
-              এখন ঠিকানা দিন।"
-            </p>
-          </div>
-          <p className="italic text-sm">
-            Natural, friendly, human-like। Customer comfort feel করে।
-          </p>
-        </div>
-      ),
+      icon: MessageSquare,
+      accentColor: 'from-blue-400 to-cyan-500',
+      iconBg: 'bg-blue-50',
+      iconColor: 'text-blue-600',
+      title: "Conversational Orders",
+      titleBn: "মানুষের মতো কথা বলে",
+      description: "নাম, ঠিকানা, ফোন — সব naturally collect করে। Robotic না, human-like conversation।",
     },
     {
-      icon: "📊",
+      icon: LayoutDashboard,
+      accentColor: 'from-emerald-400 to-green-500',
+      iconBg: 'bg-emerald-50',
+      iconColor: 'text-emerald-600',
       title: "Centralized Dashboard",
       titleBn: "সব এক জায়গায়",
-      description: (
-        <div className="space-y-2">
-          <p>এক dashboard থেকে সবকিছু:</p>
-          <ul className="space-y-1.5">
-            <li className="flex items-start gap-2">
-              <span className="text-green-500 mt-0.5">✅</span>
-              <span>সব conversations (hot leads আলাদা)</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="text-green-500 mt-0.5">✅</span>
-              <span>Product database (upload, edit, manage)</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="text-green-500 mt-0.5">✅</span>
-              <span>All orders (pending, confirmed, delivered)</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="text-green-500 mt-0.5">✅</span>
-              <span>Analytics (response rate, buying intent %)</span>
-            </li>
-          </ul>
-          <p className="font-bold text-center pt-1 text-indigo-600">
-            Chaos থেকে clarity।
-          </p>
-        </div>
-      ),
+      description: "Conversations, products, orders, analytics — এক dashboard থেকে পুরো business চালান।",
     },
     {
-      icon: "🌙",
+      icon: Moon,
+      accentColor: 'from-indigo-400 to-blue-500',
+      iconBg: 'bg-indigo-50',
+      iconColor: 'text-indigo-600',
       title: "24/7 Active Agent",
-      titleBn: "২৪/৭ কখনো ঘুমায় না",
-      description: (
-        <div className="space-y-3">
-          <div className="flex flex-wrap gap-2 text-sm">
-            <span className="bg-indigo-50 text-indigo-700 px-2 py-1 rounded-full">
-              রাত ২টায় order?
-            </span>
-            <span className="bg-indigo-50 text-indigo-700 px-2 py-1 rounded-full">
-              শুক্রবার ছুটির দিনে?
-            </span>
-            <span className="bg-indigo-50 text-indigo-700 px-2 py-1 rounded-full">
-              ঈদের দিন message?
-            </span>
-          </div>
-          <p className="font-medium text-lg text-center">
-            Autex সব সময় active।
-          </p>
-          <p className="text-sm text-gray-600 text-center">
-            আপনি পরিবারের সাথে সময় কাটান। আপনি ভ্রমণে যান। আপনি ঘুমান।
-          </p>
-          <div className="bg-gray-900 text-white text-center py-1.5 rounded text-sm font-medium">
-            Autex আপনার business চালায়।
-          </div>
-        </div>
-      ),
+      titleBn: "কখনো ঘুমায় না",
+      description: "রাত ২টা, শুক্রবার, ঈদের দিন — Autex সবসময় active। আপনি পরিবারের সাথে সময় কাটান।",
     },
   ];
 
   return (
-    <div className="w-full border-b border-[rgba(55,50,47,0.12)] flex flex-col justify-center items-center">
-      {/* Header */}
-      <div className="self-stretch px-6 md:px-12 py-12 md:py-16 border-b border-[rgba(55,50,47,0.12)] flex justify-center items-center gap-6">
-        <div className="w-full max-w-[586px] px-4 md:px-6 py-4 md:py-5 overflow-hidden rounded-lg flex flex-col justify-start items-center gap-4">
-          <h2 className="w-full text-center flex justify-center flex-col text-[#49423D] text-2xl md:text-4xl font-semibold leading-tight md:leading-[44px] font-sans tracking-tight">
-            Autex কীভাবে আপনার পুরো Business Automate করে?
-            <br />
-            From Comment to Confirmed Order — AI Handles Everything.
+    <section className="w-full border-b border-[rgba(55,50,47,0.12)] py-16 md:py-24">
+      <div className="max-w-[1000px] mx-auto px-4 md:px-6">
+        {/* Header */}
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="text-[#49423D] text-2xl md:text-4xl font-semibold leading-tight tracking-tight mb-3">
+            Autex কীভাবে সব Automate করে?
           </h2>
+          <p className="text-[#605A57] text-base md:text-lg">
+            Comment to Confirmed Order — AI Handles Everything.
+          </p>
         </div>
-      </div>
 
-      {/* Features Grid */}
-      <div className="self-stretch px-4 md:px-12 py-8 md:py-12 flex flex-col justify-center items-center gap-4">
-        <div className="w-full max-w-[1000px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-          {features.map((feature, index) => (
-            <div
-              key={index}
-              className="p-4 md:p-6 border border-[rgba(55,50,47,0.12)] rounded-lg hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
-            >
-              <div className="flex items-start gap-3 md:gap-4 mb-3">
-                <div className="text-2xl md:text-3xl">{feature.icon}</div>
-                <div>
-                  <h3 className="text-[#49423D] font-semibold text-base md:text-lg">
+        {/* Features Grid - Clean Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+          {features.map((feature, index) => {
+            const IconComponent = feature.icon
+            return (
+              <div
+                key={index}
+                className="relative bg-white rounded-xl p-6 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-lg hover:-translate-y-1 transition-all duration-300 overflow-hidden group"
+              >
+                {/* Left Accent Border */}
+                <div className={`absolute left-0 top-0 h-full w-1 bg-gradient-to-b ${feature.accentColor}`} />
+                
+                {/* Icon */}
+                <div className={`w-12 h-12 ${feature.iconBg} rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                  <IconComponent className={`w-6 h-6 ${feature.iconColor}`} strokeWidth={1.5} />
+                </div>
+                
+                {/* Title + Bengali */}
+                <div className="flex items-center gap-2 mb-1">
+                  <h3 className="text-[#49423D] text-lg font-semibold">
                     {feature.title}
                   </h3>
-                  <p className="text-[#605A57] text-xs md:text-sm font-medium">
-                    {feature.titleBn}
-                  </p>
+                  {feature.comingSoon && (
+                    <span className="bg-amber-100 text-amber-700 text-[10px] px-1.5 py-0.5 rounded-full font-semibold">Soon</span>
+                  )}
                 </div>
+                <p className="text-[#847971] text-xs font-medium mb-3">
+                  {feature.titleBn}
+                </p>
+                
+                {/* Description - Short & Sweet */}
+                <p className="text-[#605A57] text-sm leading-relaxed">
+                  {feature.description}
+                </p>
               </div>
-              <div className="text-[#605A57] text-sm md:text-base font-normal leading-relaxed">
-                {feature.description}
-              </div>
-            </div>
-          ))}
+            )
+          })}
         </div>
       </div>
-    </div>
+    </section>
   );
 }

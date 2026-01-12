@@ -29,7 +29,7 @@ export const plans: PricingPlan[] = [
     features: [
       "Unlimited Products",
       "500 Screenshots/Month",
-      "Unlimited Comments",
+      "Unlimited Comments (Coming Soon)",
       "Unlimited Conversations",
       "Unlimited Uploads",
       "AI Product Recognition",
@@ -51,7 +51,7 @@ export const plans: PricingPlan[] = [
     features: [
       "Unlimited Products",
       "1,500 Screenshots/Month ⭐",
-      "Unlimited Comments",
+      "Unlimited Comments (Coming Soon)",
       "Unlimited Conversations",
       "Unlimited Uploads",
       "Smart Intent Detection (Buying vs General)",
@@ -75,7 +75,7 @@ export const plans: PricingPlan[] = [
     features: [
       "Unlimited Products",
       "5,000 Screenshots/Month",
-      "Unlimited Comments",
+      "Unlimited Comments (Coming Soon)",
       "Unlimited Conversations",
       "Unlimited Uploads",
       "সব Pro features",

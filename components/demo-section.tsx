@@ -16,39 +16,83 @@ import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
-// Mock data for the gallery
+// Mock data for the gallery - 11 steps total (6-11 first, then 1-5)
 const DEMO_STEPS = [
+  // New images (6-11) - Order Flow
   {
     id: 1,
-    title: "১. Product Recognition",
-    description: "Screenshot থেকে AI instantly product identify করে",
-    fullTitle: "Product Recognition",
-    image: "/1.png",
+    title: "১. Product Detection",
+    description: "Customer screenshot পাঠালে AI instantly product চিনে নেয়",
+    fullTitle: "Product Detection",
+    image: "/image 6.jpg",
   },
   {
     id: 2,
-    title: "২. Name Collection",
-    description: "Natural conversation এ customer নাম জিজ্ঞাসা করে",
-    fullTitle: "Name Collection",
-    image: "/2.png",
+    title: "২. Product Details",
+    description: "Product এর নাম, দাম, availability সব information দেয়",
+    fullTitle: "Product Details",
+    image: "/image 7.jpg",
   },
   {
     id: 3,
-    title: "৩. Phone & Address",
-    description: "Phone number এবং delivery address collect করে",
-    fullTitle: "Phone & Address Collection",
-    image: "/3.png",
+    title: "৩. Customer Details",
+    description: "নাম, ঠিকানা, ফোন নম্বর naturally collect করে",
+    fullTitle: "Customer Details Collection",
+    image: "/image 8.jpg",
   },
   {
     id: 4,
     title: "৪. Order Summary",
     description: "সব details একসাথে দেখিয়ে confirmation চায়",
     fullTitle: "Order Summary",
-    image: "/4.png",
+    image: "/image 9.jpg",
   },
   {
     id: 5,
-    title: "৫. Payment & Tracking",
+    title: "৫. Payment Info",
+    description: "Payment method এবং instructions দেয়",
+    fullTitle: "Payment Information",
+    image: "/image 10.jpg",
+  },
+  {
+    id: 6,
+    title: "৬. Order Confirmed",
+    description: "Order confirm + tracking information দেয়",
+    fullTitle: "Order Confirmation",
+    image: "/image 11.jpg",
+  },
+  // Original images (1-5) - Order Completion Flow  
+  {
+    id: 7,
+    title: "৭. Product Recognition",
+    description: "Screenshot থেকে AI instantly product identify করে",
+    fullTitle: "Product Recognition from Screenshot",
+    image: "/1.png",
+  },
+  {
+    id: 8,
+    title: "৮. Name Collection",
+    description: "Natural conversation এ customer নাম জিজ্ঞাসা করে",
+    fullTitle: "Name Collection",
+    image: "/2.png",
+  },
+  {
+    id: 9,
+    title: "৯. Phone & Address",
+    description: "Phone number এবং delivery address collect করে",
+    fullTitle: "Phone & Address Collection",
+    image: "/3.png",
+  },
+  {
+    id: 10,
+    title: "১০. Order Summary",
+    description: "সব details একসাথে দেখিয়ে confirmation চায়",
+    fullTitle: "Order Summary",
+    image: "/4.png",
+  },
+  {
+    id: 11,
+    title: "১১. Payment & Tracking",
     description: "Order confirm + payment instruction + tracking link",
     fullTitle: "Payment & Tracking",
     image: "/5.png",
@@ -169,9 +213,8 @@ export function DemoSection() {
           </h2>
 
           <p className="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
-            এই 5টি ধাপে AI সম্পূর্ণ order process automate করে — product
-            recognition থেকে payment instruction পর্যন্ত। কোনো manual
-            intervention ছাড়াই। 🤖
+            এই 11টি ধাপে AI সম্পূর্ণ order process automate করে — product
+            recognition থেকে payment instruction পর্যন্ত। কোনো manual intervention ছাড়াই। 🤖
           </p>
         </div>
 

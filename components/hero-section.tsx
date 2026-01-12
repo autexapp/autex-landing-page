@@ -24,8 +24,8 @@ export function HeroSection() {
 
               {/* Value Props */}
               <div className="max-w-[700px] grid grid-cols-1 sm:grid-cols-2 gap-2 md:gap-3 text-center">
-                <div className="text-[#37322f] text-xs sm:text-sm font-medium">
-                  ✓ Instant Comment Reply + DM
+                <div className="text-[#37322f] text-xs sm:text-sm font-medium flex items-center justify-center gap-2">
+                  ✓ Instant Comment Reply + DM <span className="bg-amber-100 text-amber-700 text-[10px] px-1.5 py-0.5 rounded-full font-semibold">Coming Soon</span>
                 </div>
                 <div className="text-[#37322f] text-xs sm:text-sm font-medium">
                   ✓ AI Product Recognition from Screenshots 
@@ -64,7 +64,7 @@ export function HeroSection() {
               🎁 Founder Pricing: মাত্র ৳৫৯৯/month (Locked Forever)
             </p>
             <p className="text-[#605A57] text-xs font-medium font-sans line-through">
-              Regular Price: ৳৯৯৯/month
+              Regular Price: ৳৮৯৯/month
             </p>
           </div>
 

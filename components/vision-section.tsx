@@ -86,7 +86,7 @@ export default function VisionSection() {
             Lock ৳৫৯৯/month Forever
           </p>
           <p className="text-[#605A57] text-xs font-medium font-sans line-through">
-            (Phase 2-তে new users: ৳৯৯৯/month)
+            (Phase 2-তে new users: ৳৮৯৯/month)
           </p>
           <p className="text-[#605A57] text-xs font-medium font-sans mt-2">
             এই offer শুধু প্রথম ১০০ জনের জন্য।

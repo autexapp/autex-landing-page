@@ -25,7 +25,7 @@ export default function HowItWorks() {
       number: "3",
       title: "Watch Your Business Grow",
       description:
-        "That's it. You focus on running your business. AI handles your comments and brings customers to your inbox.",
+        "That's it. You focus on running your business. AI handles your inbox and brings customers to confirmed orders.",
       descriptionBn: null,
     },
   ];

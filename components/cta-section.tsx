@@ -34,9 +34,10 @@ export default function CTASection() {
               </p>
               
               <div className="flex flex-col md:flex-row gap-4 md:gap-8 mt-4 text-[#49423D] font-medium text-sm md:text-base">
-                 <div className="flex items-center gap-2">
+                   <div className="flex items-center gap-2">
                     <span>⚡ AI handles comments</span>
-                 </div>
+                    <span className="bg-amber-100 text-amber-700 text-[10px] px-1.5 py-0.5 rounded-full font-semibold">Soon</span>
+                   </div>
                  <div className="flex items-center gap-2">
                     <span>📸 AI recognizes products</span>
                  </div>
@@ -57,7 +58,7 @@ export default function CTASection() {
               >
                 <div className="w-44 h-[41px] absolute left-0 top-0 bg-gradient-to-b from-[rgba(255,255,255,0)] to-[rgba(0,0,0,0.10)] mix-blend-multiply pointer-events-none"></div>
                 <span className="text-white text-base font-bold leading-5 font-sans relative z-10 block">
-                  Lock ৳৫৯৯/month Forever <span className="font-normal text-sm opacity-80 ml-1">(Regular: ৳৯৯৯)</span>
+                  Lock ৳৫৯৯/month Forever <span className="font-normal text-sm opacity-80 ml-1">(Regular: ৳৮৯৯)</span>
                 </span>
               </button>
               <p className="text-[#605A57] text-xs italic">"শুধু আরও ৬৭ spots বাকি।"</p>
