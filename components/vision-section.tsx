@@ -43,7 +43,7 @@ export default function VisionSection() {
             এটা শুধু শুরু। Autex-এর Future আরও Powerful।
           </h2>
           <p className="self-stretch text-center text-[#605A57] text-base md:text-lg font-normal leading-7 font-sans">
-            Phase 2 Launch: ২-৩ মাসের মধ্যে। এখনই ৩ দিনের ফ্রি ট্রায়াল শুরু করুন এবং সব features experience করুন।
+            Phase 2 Launch: ২-৩ মাসের মধ্যে। যারা এখন join করবে (Founder Members), তারা সব future features পাবে একই price-এ। New users দেবে double price।
           </p>
         </div>
       </div>
@@ -80,10 +80,16 @@ export default function VisionSection() {
         {/* Closing CTA */}
         <div className="text-center mt-4">
           <p className="text-[#37322f] text-lg font-semibold font-sans">
-            🎉 Currently Free for 3 Days
+            🎁 Join Now as a Founder
           </p>
-          <p className="text-[#605A57] text-sm font-medium font-sans mt-2">
-            কোনো payment নেই। ৩ দিন ফ্রিতে ব্যবহার করে দেখুন।
+          <p className="text-[#37322f] text-sm font-semibold font-sans mt-2">
+            Lock ৳৫৯৯/month Forever
+          </p>
+          <p className="text-[#605A57] text-xs font-medium font-sans line-through">
+            (Phase 2-তে new users: ৳৮৯৯/month)
+          </p>
+          <p className="text-[#605A57] text-xs font-medium font-sans mt-2">
+            এই offer শুধু প্রথম ১০০ জনের জন্য।
           </p>
         </div>
 
@@ -93,7 +99,7 @@ export default function VisionSection() {
             className="bg-gradient-to-r from-[#605A57] to-[#37322f] text-white text-sm font-semibold font-sans rounded-full px-6 py-3 animate-shimmer"
             onClick={() => document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" })}
           >
-            Start Free Trial
+            Pre-Register Now
           </Button>
         </div>
       </div>
