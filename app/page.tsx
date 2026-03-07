@@ -10,7 +10,7 @@ import VisionSection from "../components/vision-section"
 import HowItWorks from "../components/how-it-works"
 import TestimonialsSection from "../components/testimonials-section"
 import EarlyBirdPricing from "../components/early-bird-pricing"
-import PreRegistrationFormSection from "../components/pre-registration-form-section"
+
 import FAQSection from "../components/faq-section"
 import CTASection from "../components/cta-section"
 import FooterSection from "../components/footer-section"
@@ -30,9 +30,7 @@ function Badge({ icon, text }: { icon: React.ReactNode; text: string }) {
 export default function LandingPage() {
   const [activeCard, setActiveCard] = useState(0)
   const [progress, setProgress] = useState(0)
-  const [selectedPlan, setSelectedPlan] = useState("")
   const mountedRef = useRef(true)
-  const formSectionRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     const progressInterval = setInterval(() => {
@@ -67,9 +65,7 @@ export default function LandingPage() {
     setProgress(0)
   }
 
-  const handlePlanSelect = (planId: string) => {
-    setSelectedPlan(planId)
-  }
+
 
   const getDashboardContent = () => {
     switch (activeCard) {
@@ -192,12 +188,7 @@ export default function LandingPage() {
 
             {/* Pricing Section */}
             <div className="w-full" id="pricing">
-              <EarlyBirdPricing selectedPlan={selectedPlan} onPlanSelect={handlePlanSelect} formSectionRef={formSectionRef} />
-            </div>
-
-            {/* Pre-registration form section directly after pricing */}
-            <div className="w-full" ref={formSectionRef}>
-              <PreRegistrationFormSection selectedPlan={selectedPlan} />
+              <EarlyBirdPricing />
             </div>
 
             {/* FAQ Section with ID for nav */}
