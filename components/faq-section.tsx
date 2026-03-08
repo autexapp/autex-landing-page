@@ -79,7 +79,7 @@ const faqData: FAQItem[] = [
           </ul>
         </div>
         <p className="text-sm bg-green-50 text-green-800 p-2 rounded border border-green-100 font-medium">
-          Founder members সব feature পাবে একই ৳৫৯৯ price-এ!
+          এখনই ৩ দিনের ফ্রি ট্রায়াল শুরু করুন এবং সব features experience করুন!
         </p>
       </div>
     ),

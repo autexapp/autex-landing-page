@@ -383,7 +383,7 @@ export function DemoSection() {
               className="bg-gradient-to-r from-[#605A57] to-[#37322f] text-white text-sm font-semibold font-sans rounded-full px-6 py-3 animate-shimmer"
               onClick={() => document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" })}
             >
-              Pre-Register Now — ৳৫৯৯/month
+              Start Free Trial — 3 Days Free
             </Button>
             <Button
               variant="outline"

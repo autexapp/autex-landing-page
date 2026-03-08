@@ -58,13 +58,13 @@ export function HeroSection() {
             </Button>
           </div>
 
-          {/* Pricing information */}
+          {/* Free Trial Info */}
           <div className="text-center mt-4">
             <p className="text-[#37322f] text-sm font-semibold font-sans">
-              🎁 Founder Pricing: মাত্র ৳৫৯৯/month (Locked Forever)
+              🎉 3 Days Free Trial — No Payment Required
             </p>
-            <p className="text-[#605A57] text-xs font-medium font-sans line-through">
-              Regular Price: ৳৮৯৯/month
+            <p className="text-[#605A57] text-xs font-medium font-sans">
+              সব features আনলক। ফ্রিতে ব্যবহার করে দেখুন।
             </p>
           </div>
 
