@@ -1,3 +1,5 @@
+
+
 # Project Constitution: Autex (v2)
 
 This document serves as a comprehensive technical constitution for the Autex project, outlining its purpose, architecture, content structure, and core components based on a full analysis of the codebase.

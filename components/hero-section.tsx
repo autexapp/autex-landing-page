@@ -1,6 +1,12 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
+import {
+  Dialog,
+  DialogContent,
+  DialogTrigger,
+  DialogTitle,
+} from "@/components/ui/dialog"
 
 export function HeroSection() {
 
@@ -25,7 +31,7 @@ export function HeroSection() {
               {/* Value Props */}
               <div className="max-w-[700px] grid grid-cols-1 sm:grid-cols-2 gap-2 md:gap-3 text-center">
                 <div className="text-[#37322f] text-xs sm:text-sm font-medium flex items-center justify-center gap-2">
-                  ✓ Instant Comment Reply + DM <span className="bg-amber-100 text-amber-700 text-[10px] px-1.5 py-0.5 rounded-full font-semibold">Coming Soon</span>
+                  ✓ Instant Comment Reply + DM 
                 </div>
                 <div className="text-[#37322f] text-xs sm:text-sm font-medium">
                   ✓ AI Product Recognition from Screenshots 
@@ -48,14 +54,32 @@ export function HeroSection() {
             >
               Get Started for Free
             </a>
-            <Button
-              variant="outline"
-              size="lg"
-              className="rounded-full"
-              onClick={() => alert("Demo video functionality would be implemented here")}
-            >
-              Watch 2-Min Demo
-            </Button>
+            <Dialog>
+              <DialogTrigger asChild>
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="rounded-full"
+                >
+                  Watch 2-Min Demo
+                </Button>
+              </DialogTrigger>
+              <DialogContent className="sm:max-w-[800px] p-0 overflow-hidden border-none bg-transparent shadow-2xl">
+                <DialogTitle className="sr-only">Autex Demo Video</DialogTitle>
+                <div className="aspect-video w-full">
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src="https://www.youtube.com/embed/0lrpnCDwQtM?autoplay=1"
+                    title="Autex Demo Video"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                    className="w-full h-full"
+                  ></iframe>
+                </div>
+              </DialogContent>
+            </Dialog>
           </div>
 
           {/* Free Trial Info */}

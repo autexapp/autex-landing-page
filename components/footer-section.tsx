@@ -41,7 +41,7 @@ export default function FooterSection() {
 
             {/* LinkedIn Icon */}
             <a
-              href="https://www.linkedin.com/in/zayed-web-developer/"
+              href="https://www.linkedin.com/in/xayed007"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#49423D] hover:opacity-70 transition-opacity"

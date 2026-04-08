@@ -16,86 +16,63 @@ import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
-// Mock data for the gallery - 11 steps total (6-11 first, then 1-5)
+// Mock data for the gallery - 8 steps total from preview folder
 const DEMO_STEPS = [
-  // New images (6-11) - Order Flow
   {
     id: 1,
-    title: "১. Product Detection",
-    description: "Customer screenshot পাঠালে AI instantly product চিনে নেয়",
-    fullTitle: "Product Detection",
-    image: "/image 6.jpg",
+    title: "১. Screenshot Analysis",
+    description: "Customer স্ক্রিনশট পাঠালে AI সাথে সাথে প্রোডাক্ট চিনে ফেলে",
+    fullTitle: "Screenshot Analysis & Product Identification",
+    image: "/preview/send screnshort- order-1.png",
   },
   {
     id: 2,
-    title: "২. Product Details",
-    description: "Product এর নাম, দাম, availability সব information দেয়",
-    fullTitle: "Product Details",
-    image: "/image 7.jpg",
+    title: "২. Smart Response",
+    description: "প্রোডাক্টের ডিটেইলস এবং 'Order Now' বাটন সহ রিপ্লাই দেয়",
+    fullTitle: "Automated Smart Response with Product Details",
+    image: "/preview/identtify product and give details with order now button .order 2.png",
   },
   {
     id: 3,
-    title: "৩. Customer Details",
-    description: "নাম, ঠিকানা, ফোন নম্বর naturally collect করে",
-    fullTitle: "Customer Details Collection",
-    image: "/image 8.jpg",
+    title: "৩. Real-time Inventory",
+    description: "ড্যাশবোর্ড থেকে রিয়েল-টাইম ডেটা নিয়ে কাস্টমারকে সঠিক তথ্য দেয়",
+    fullTitle: "Real-time Inventory & Dashboard Sync",
+    image: "/preview/dashboard product overview to prove AI is responding with real data order 3.png",
   },
   {
     id: 4,
-    title: "৪. Order Summary",
-    description: "সব details একসাথে দেখিয়ে confirmation চায়",
-    fullTitle: "Order Summary",
-    image: "/image 9.jpg",
+    title: "৪. Out-of-stock Handling",
+    description: "স্টক না থাকলে অল্টারনেটিভ সাজেস্ট করে এবং কাস্টমারের তথ্য নেয়",
+    fullTitle: "Smart Out-of-stock Handling & Information Collection",
+    image: "/preview/AI validate out of stock sizes and recomede available ones and ask for information to save order order 4.png",
   },
   {
     id: 5,
-    title: "৫. Payment Info",
-    description: "Payment method এবং instructions দেয়",
-    fullTitle: "Payment Information",
-    image: "/image 10.jpg",
+    title: "৫. Order Summary",
+    description: "অর্ডারের সব তথ্য চেক করার জন্য একটি সামারি দেখায়",
+    fullTitle: "Comprehensive Order Summary for Confirmation",
+    image: "/preview/show order sumarry order 5.png",
   },
   {
     id: 6,
-    title: "৬. Order Confirmed",
-    description: "Order confirm + tracking information দেয়",
-    fullTitle: "Order Confirmation",
-    image: "/image 11.jpg",
+    title: "৬. Payment Verification",
+    description: "ডেলিভারি চার্জ এবং পেমেন্টের লাস্ট ডিজিট সংগ্রহ করে",
+    fullTitle: "Delivery Logistics & Payment Information Collection",
+    image: "/preview/ask for delivery charge and save last two digit of the payment numbr order 6.png",
   },
-  // Original images (1-5) - Order Completion Flow  
   {
     id: 7,
-    title: "৭. Product Recognition",
-    description: "Screenshot থেকে AI instantly product identify করে",
-    fullTitle: "Product Recognition from Screenshot",
-    image: "/1.png",
+    title: "৭. Order Management",
+    description: "সব অর্ডার অটোমেটিক ড্যাশবোর্ডের অর্ডার লিস্টে জমা হয়",
+    fullTitle: "Automated Order Listing in Dashboard",
+    image: "/preview/order list in the dashboard order 7.png",
   },
   {
     id: 8,
-    title: "৮. Name Collection",
-    description: "Natural conversation এ customer নাম জিজ্ঞাসা করে",
-    fullTitle: "Name Collection",
-    image: "/2.png",
-  },
-  {
-    id: 9,
-    title: "৯. Phone & Address",
-    description: "Phone number এবং delivery address collect করে",
-    fullTitle: "Phone & Address Collection",
-    image: "/3.png",
-  },
-  {
-    id: 10,
-    title: "১০. Order Summary",
-    description: "সব details একসাথে দেখিয়ে confirmation চায়",
-    fullTitle: "Order Summary",
-    image: "/4.png",
-  },
-  {
-    id: 11,
-    title: "১১. Payment & Tracking",
-    description: "Order confirm + payment instruction + tracking link",
-    fullTitle: "Payment & Tracking",
-    image: "/5.png",
+    title: "৮. Customer Insights",
+    description: "কাস্টমার প্রোফাইল, সাইজ, কালার এবং পেমেন্ট স্ট্যাটাস ট্র্যাক করে",
+    fullTitle: "Detailed Order Overview & Customer Insights",
+    image: "/preview/order overview in the dashbord with customer info, sizes,cololr and payment digit . order 8.png",
   },
 ];
 
@@ -213,8 +190,8 @@ export function DemoSection() {
           </h2>
 
           <p className="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
-            এই 11টি ধাপে AI সম্পূর্ণ order process automate করে — product
-            recognition থেকে payment instruction পর্যন্ত। কোনো manual intervention ছাড়াই। 🤖
+            এই ৮টি ধাপে AI সম্পূর্ণ order process automate করে — product
+            recognition থেকে dashboard synchronization পর্যন্ত। কোনো manual intervention ছাড়াই। 🤖
           </p>
         </div>
 
